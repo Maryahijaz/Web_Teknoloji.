@@ -1,0 +1,24 @@
+*{
+    font-family: 'poppins', sans serif;
+}
+body{
+    background-image: url('um.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.cv{
+    font-size: medium;
+    margin: 129px ;
+    .title{
+        font-size: 29px;
+        color: black;
+    }
+    .inf{
+        color:silver;
+    }
+
+}
