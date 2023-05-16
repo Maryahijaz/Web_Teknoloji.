@@ -1,0 +1,92 @@
+*{
+    font-family: 'poppins', sans serif;
+}
+body{
+    background-image: url('um.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+header{
+    color: black;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.input-field{
+    display: flex;
+    flex-direction:column;
+}
+
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    color: silver;
+    padding: 0 0 0 45px;
+    background: rgba( 255, 255, 255, 0.1);
+}
+
+i{
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: wheat;
+}
+
+::-webkit-input-placeholder{
+    color: silver;
+}
+
+.submit{
+    border: none;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    background: rgba( 255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0 0.4);
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: silver;
+    margin-top: 10px;
+}
+
+.left{
+display: flex;
+}
+label a{
+    color: silver;
+    text-decoration: none;
+}
