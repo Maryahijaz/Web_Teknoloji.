@@ -9,6 +9,13 @@ body{
     background-position: center;
     
 }
+h1{
+    color: black;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
 
 .cv{
     font-size: medium;
@@ -19,6 +26,7 @@ body{
     }
     .inf{
         color:silver;
+       
     }
 
 }
