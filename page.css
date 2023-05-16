@@ -1,0 +1,28 @@
+*{
+    font-family: 'poppins', sans serif;
+}
+body{
+    background-image: url('um.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+header{
+    color: black;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+.paragraph{
+font-size: 20px;
+}
