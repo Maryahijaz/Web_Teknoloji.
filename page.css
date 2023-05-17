@@ -16,13 +16,19 @@ body{
     padding: 0 15px 0 15px;
 }
 
-header{
+h1{
     color: black;
     font-size: 50px;
     display: flex;
     justify-content: center;
     padding: 10px 0 10px 0;
 }
+
+.page{
+    font-size: 25px;
+}
+
 .paragraph{
 font-size: 20px;
 }
+
