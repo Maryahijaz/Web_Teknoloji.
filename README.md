@@ -1,2 +1,2 @@
 # Web_Teknoloji.
-Exampil code
+project codes
