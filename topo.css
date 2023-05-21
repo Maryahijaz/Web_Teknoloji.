@@ -1,0 +1,51 @@
+*{
+    font-family: 'poppins', sans serif;
+}
+body{
+    background-image: url('um.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+h1{
+    color: black;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+#title
+{
+    margin-top: 10px;
+    float:left;
+    width: 1340px;
+    height: 60px;
+    background-color: rgb(178, 231, 7); 
+
+}
+
+#titletype
+{
+    margin:  5px 30px;
+    padding: 5px 20px;
+    font-size: 40px; 
+    color:rgb(0, 0, 0);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.monum
+{
+    padding: 15px;
+    margin: 15px;
+    position: relative;
+    float:left;
+   width: 360px;
+   height: 300px;
+     
+}
+.page{
+    color: black;
+    font-size: 27px;
+    justify-content: right;
+}
