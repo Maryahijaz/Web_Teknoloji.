@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication</title>
+    <link rel="stylesheet" type="text/css" href="iletesim.css">
+</head>
+<body>
+    
+    <div class="top-header">
+        <header>Communication</header>
+
+     </div><br>
+
+    <div class="box">
+	<div class="container">
+
+    <form action="" class="form-validation">
+        <input type="text" class="input" placeholder="Name Surname" id="name" pattern="[A-Za-z0-9_]+" required><br>
+        <input type="email" class="input" placeholder="E-posta" id="email" required><br>
+        <input type="password" class="input" minlength="5" maxlength="10" placeholder="Password" id="password" required><br>
+        <select name="" required>
+            <option value="">Gender</option>
+            <option value="1">Women</option>
+            <option value="2">Men</option>
+        </select> <br>
+        <label  class="form-validation" >Choose Your Major :</label> <br>
+        <select name=" required">
+        <option value="computer">Computer Engineering</option>
+        <option value="computer">Computer Science</option>
+        <option value="Software">Software Engineering</option>
+        <option value="mechanic">Mechanical Engineering</option>
+        </select><br><br>
+
+        <label > Choose Your Interests:</label> <br>
+        <input type="checkbox" class="ul" name="Interst" value="Sports">Sport
+        <input type="checkbox" class="ul" name="Interst" value="Languages">Language 
+        <input type="checkbox" class="ul" name="Interst" value="Music">Music<br><br>
+
+        <label >Leave Your Message:</label> <br>
+        <textarea name="mesag"  rows="10" cols="30"> </textarea> <br><br>
+
+
+        <button type="submit" class="submit">Send</button>
+        <button type="reset" class="submit">Reset</button>
+    </form>
+    <hr>
+    <script>
+        const control = form =>
+        {
+            let invalids = form.querySelectorAll(':invalid').length,
+            button = form.querySelector('button[type="submit"]');
+            console.log(invalids);
+            if(invalids == 0){
+                button.removeAttribute('disabled');
+            }else{
+                button.setAttribute('disabled', 'disabled');
+            }
+        }
+
+        let forms = document.querySelectorAll('form.form-validation');
+        forms.forEach(form => {
+             control(form);
+             form.addEventListener('reset', () => setTimeout(() => control(form), 1))
+             form.addEventListener('keyup', () => control(form))
+             form.addEventListener('change', () => control(form))
+        })
+
+    </script>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+        var submit =document.getElementById('submit');
+        submit.addEventListener('click', function(e){
+            e.preventDefault
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var Interst = document.getElementById('intersts').value;
+            var required = document.getElementById('required').value;
+            var mesag = document.getElementById('message').value;
+            var body = 'name: '+name + '<br/> email: '+email + '<br/> password: '+password + '<br/> message: '+mesag +'<br/> intersts'+ Interst +'<br/> required'+required;
+
+
+                        Email.send({
+                SecureToken : "a82e4745-3970-48cc-a5fa-ca1e5c848d63  ",
+                To : 'marirosehijazi@gmail.com',
+                From : "marirosehijazi@gmail.com",
+                Subject : "web projesi",
+                Body : body
+            }).then(
+            message => alert(message)
+            );
+
+
+        })
+    </script>
+    </div>
+    </div>
+</body>
+</html>
